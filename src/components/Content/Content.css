@@ -1,0 +1,47 @@
+.main-h1{
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    padding-top: 12px;
+}
+
+.content{
+  background-color:#e9ecef;
+}
+
+article {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 10px;
+  }
+  
+  article > div {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+  }
+  
+  article > div img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  article > div h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  article > div p {
+    font-size: 1rem;
+  }
+  
+  article > div a {
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  article > div a:hover {
+    text-decoration: none;
+  }
+  

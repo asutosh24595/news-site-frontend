@@ -1,25 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import { RouterProvider, createBrowserRouter } from "react-router-dom";
+import Home from "./components/Home";
+import SignIn from "./components/SignIn";
+import SignUp from "./components/SignUp";
+import Otpverify from "./components/Otpverify";
+import Premium from "./components/Premium";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  const router = createBrowserRouter([
+    { index: true, element: <Home /> },
+    { path: "/:query", element: <Home /> },
+    { path: "/sign-in", element: <SignIn /> },
+    { path: "/sign-up", element: <SignUp /> },
+    { path: "/otp-verify", element: <Otpverify /> },
+    { path: "/premium", element: <Premium /> },
+  ]);
+  return <RouterProvider router={router}></RouterProvider>;
 }
 
 export default App;
