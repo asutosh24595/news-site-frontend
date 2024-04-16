@@ -68,3 +68,22 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+News Application
+Technologies used :-
+
+React Js :- for making the frontend interface
+News Api :- for fetching the news
+Express :- used for communication between client and server
+Node Js :- used for creating web servers.
+MongoDB :- database
+
+
+Features :-
+
+Fetch the data from News API
+Links to original news
+Sign In 
+Premium membership
+
+API key needs to be  provided which is  to be used to fetch news from news API
